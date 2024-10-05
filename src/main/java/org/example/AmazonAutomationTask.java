@@ -40,7 +40,7 @@ public class AmazonAutomationTask {
 
         WebElement passwordTextBox = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id=\"ap_password\"]")));
 //        actions.sendKeys(Keys.ESCAPE).perform();
-        passwordTextBox.sendKeys("Semester-Re5tar");
+        passwordTextBox.sendKeys("P@ssw0rd");
 
         WebElement signInButton = driver.findElement(By.xpath("//input[@id=\"signInSubmit\"]"));
         signInButton.click();
