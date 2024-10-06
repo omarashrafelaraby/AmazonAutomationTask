@@ -11,3 +11,6 @@ Click on the “m” logo on the right of the screen to open the maven menu
 Click on “Generate Sources and Update Folders For All Projects” Button, which is the second icon from the left-hand side and wait for your IDE to load all the sources from this file
 Once “pom.xml” is loaded, you can start working on your branch file 
 Once finished with your work, please Click on the drop down button that contains the name of the branch file you created and press commit and push so that you can post your work back on the repo.
+
+Important Note:
+Use Intellij IDE, Don't Use any other IDE (e.g. Eclipse,...etc.) so you can open the project!!!

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="309849ad-0e5d-4437-96f3-74ff6f4a2952" name="Changes" comment="commit2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AmazonAutomationTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AmazonAutomationTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "omarashrafelaraby"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/omarashrafelaraby/AmazonAutomationTask.git",
+    "accountId": "2471a13e-5027-449d-8695-9652af1988a6"
+  }
+}]]></component>
   <component name="MaliciousPackageCheckinHandlerState">
     <option name="packageCheck" value="true" />
   </component>
@@ -40,7 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.AmazonAutomationTask.executor": "Run",
+    "Application.AmazonAutomationTask.executor": "Debug",
     "Application.AmazonShoppingAutomation.executor": "Run",
     "Application.AmazonTask.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -87,7 +98,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728077001883</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit2">
+      <option name="closed" value="true" />
+      <created>1728142739257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728142739257</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit2">
+      <option name="closed" value="true" />
+      <created>1728229304187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728229304187</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
