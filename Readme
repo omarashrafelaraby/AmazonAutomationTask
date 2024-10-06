@@ -1,0 +1,13 @@
+Launch IntelliJ IDE
+Click on The project’s name on the top left corner
+Click on “Get from version Control” from the drop down menu
+Paste the URL"https://github.com/omarashrafelaraby/AmazonAutomationTask" for the repository in the URL field
+Click on “Clone” Button
+Click on “Trust Project” button and open it in a new window
+Click on “Main” button in the top left corner or in the hamburger icon (Depends on your IDE Version)
+Click on “+New Branch” from the drop down menu and Name your branch file
+Under Project tab present on the left side of the screen, double-click on “pom.xml” file
+Click on the “m” logo on the right of the screen to open the maven menu
+Click on “Generate Sources and Update Folders For All Projects” Button, which is the second icon from the left-hand side and wait for your IDE to load all the sources from this file
+Once “pom.xml” is loaded, you can start working on your branch file 
+Once finished with your work, please Click on the drop down button that contains the name of the branch file you created and press commit and push so that you can post your work back on the repo.
