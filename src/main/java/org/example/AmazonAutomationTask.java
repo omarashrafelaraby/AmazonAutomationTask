@@ -18,7 +18,7 @@ public class AmazonAutomationTask {
         WebDriver driver = getWebDriver();
         driver.manage().window().maximize();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-
+// Language Change bypassed through amazon URL
   /*     WebElement changeLanguageButton = driver.findElement(By.xpath("//span[@class=\"icp-nav-link-inner\"]//span[@class=\"nav-line-2\"]"));
         changeLanguageButton.click();
 
@@ -55,11 +55,11 @@ public class AmazonAutomationTask {
         WebElement videoGames = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Video Games")));
         videoGames.click();
 
-//        WebElement allVideoGames = driver.findElement(By.linkText("All Video Games"));
-//        allVideoGames.click();
+        WebElement allVideoGames = driver.findElement(By.linkText("All Video Games"));
+        allVideoGames.click();
 
-        WebElement freeShippingCheckbox =wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a//input[@id=\"apb-browse-refinements-checkbox_2\"]")));
-        freeShippingCheckbox.click();
+        WebElement freeShippingCheckbox = driver.findElement(By.cssSelector("#apb-browse-refinements-checkbox_2"));
+        freeShippingCheckbox.submit();
 
         WebElement newCheckBox = driver.findElement(By.xpath("//a[@aria-current=\"step\"]/following::span[text()='New']"));
         newCheckBox.click();
