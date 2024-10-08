@@ -125,7 +125,7 @@ public class AmazonAutomationTask {
         options.addArguments("--disable-cache");
 
         WebDriver driver = new ChromeDriver(options);
-        driver.get("https://www.amazon.eg/?language=en_AE");
+        driver.get("https://www.amazon.eg/");
         return driver;
     }
 }
