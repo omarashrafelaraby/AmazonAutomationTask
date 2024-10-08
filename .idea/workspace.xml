@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="309849ad-0e5d-4437-96f3-74ff6f4a2952" name="Changes" comment="Update Readme file">
+    <list default="true" id="309849ad-0e5d-4437-96f3-74ff6f4a2952" name="Changes" comment="Free Shipping, new &amp; sort">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AmazonAutomationTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AmazonAutomationTask.java" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.AmazonAutomationTask.executor": "Debug",
+    "Application.AmazonAutomationTask.executor": "Run",
     "Application.AmazonShoppingAutomation.executor": "Run",
     "Application.AmazonTask.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -123,14 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728232391930</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Free Shipping, new &amp; sort">
+      <option name="closed" value="true" />
+      <created>1728388069832</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728388069832</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="commit2" />
     <MESSAGE value="Update Readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Readme file" />
+    <MESSAGE value="Free Shipping, new &amp; sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Free Shipping, new &amp; sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

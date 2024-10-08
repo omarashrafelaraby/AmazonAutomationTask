@@ -18,20 +18,22 @@ public class AmazonAutomationTask {
         WebDriver driver = getWebDriver();
         driver.manage().window().maximize();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-// Language Change bypassed through amazon URL
-  /*     WebElement changeLanguageButton = driver.findElement(By.xpath("//span[@class=\"icp-nav-link-inner\"]//span[@class=\"nav-line-2\"]"));
+
+      WebElement changeLanguageButton = driver.findElement(By.xpath("//span[@class=\"icp-nav-link-inner\"]//span[@class=\"nav-line-2\"]"));
         changeLanguageButton.click();
 
         WebElement changeLanguageToEnglish = driver.findElement(By.xpath("//input[@value=\"en_AE\"]/following-sibling::i[@class=\"a-icon a-icon-radio\"]"));
         changeLanguageToEnglish.click();
 
         WebElement saveChangesButton = driver.findElement(By.xpath("//input[@class=\"a-button-input\"]"));
-        saveChangesButton.click();*/
+        saveChangesButton.click();
 
-        WebElement loginButton = driver.findElement(By.xpath("//span[@id=\"nav-link-accountList-nav-line-1\"]"));
+        new Thread(String.valueOf(10000));
+
+        WebElement loginButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id=\"nav-link-accountList-nav-line-1\"]")));
         loginButton.click();
 
-        WebElement emailTextBox = driver.findElement(By.xpath("//input[@id=\"ap_email\"]"));
+        WebElement emailTextBox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id=\"ap_email\"]")));
         emailTextBox.sendKeys("01155502161");
 
         WebElement continueButton = driver.findElement(By.xpath("//input[@id=\"continue\"]"));
