@@ -14,7 +14,7 @@ import java.util.List;
 
 
 public class AmazonAutomationTask {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = getWebDriver();
         driver.manage().window().maximize();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -28,7 +28,7 @@ public class AmazonAutomationTask {
         WebElement saveChangesButton = driver.findElement(By.xpath("//input[@class=\"a-button-input\"]"));
         saveChangesButton.click();
 
-        new Thread(String.valueOf(10000));
+        Thread.sleep(3000);
 
         WebElement loginButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id=\"nav-link-accountList-nav-line-1\"]")));
         loginButton.click();
