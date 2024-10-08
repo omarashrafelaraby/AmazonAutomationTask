@@ -52,29 +52,32 @@ public class AmazonAutomationTask {
         WebElement allMenuButton = driver.findElement(By.id("nav-hamburger-menu"));
         allMenuButton.click();
 
-        WebElement videoGames = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Video Games")));
+        WebElement SeeAll = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[text()='See all'])[1]/parent::a")));
+        SeeAll.click();
+
+        WebElement videoGames = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[text()='Video Games']/parent::a/parent::li)[1]")));
         videoGames.click();
 
-        WebElement allVideoGames = driver.findElement(By.linkText("All Video Games"));
+        WebElement allVideoGames = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[text()='All Video Games']/parent::li)[2]")));
         allVideoGames.click();
 
-        WebElement freeShippingCheckbox = driver.findElement(By.cssSelector("#apb-browse-refinements-checkbox_2"));
-        freeShippingCheckbox.submit();
+        WebElement freeShippingCheckbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@aria-labelledby=\"Free Shipping\"]/parent::label")));
+        freeShippingCheckbox.click();
 
-        WebElement newCheckBox = driver.findElement(By.xpath("//a[@aria-current=\"step\"]/following::span[text()='New']"));
+        WebElement newCheckBox = driver.findElement(By.xpath("//*[text()='New']"));
         newCheckBox.click();
 
-        WebElement sortMenuButton = driver.findElement(By.xpath("//span[@class=\"a-button-text a-declarative\"]"));
+        WebElement sortMenuButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class=\"a-button-text a-declarative\"]")));
         sortMenuButton.click();
 
-        WebElement highToLowOption = driver.findElement(By.xpath("//li[@aria-labelledby=\"s-result-sort-select_2\"]"));
+        WebElement highToLowOption = driver.findElement(By.xpath("//*[text()='Price: High to Low']/parent::li"));
         highToLowOption.click();
 
 
         while (true) {
             List<WebElement> productsList = driver.findElements(By.cssSelector(".s-result-item"));
             for (WebElement product : productsList) {
-                String priceTag = product.findElement(By.cssSelector(".a-price-whole")).getText();
+                String priceTag = product.findElements(By.cssSelector(".a-price-whole")).toString();
                 if (15000 > Integer.parseInt(priceTag.replace(",", ""))) {
                     WebElement priceFilter = product.findElement(By.cssSelector(".a-button-input"));
                     priceFilter.click();
